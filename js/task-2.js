@@ -1,4 +1,10 @@
-const getUsersWithFriend = (users, friendName) => {return users.filter(user => user.friends.includes(friendName));};
+const getUsersWithFriend = (users, friendName) => {return users.filter(user => user.friends.includes(friendName));}; 
+/* Not: allUsers[0] ilk eleman = user
+💡 allUsers[1] ikinci eleman = user (ikinci çalışmada)
+💡 allUsers[2] üçüncü eleman = user (üçüncü çalışmada)
+user → callback parametresi
+allUsers[x] → callback’e sırayla gönderilen elemanlar.  allUsers arrayindeki bir elemanda obje olduğu için user. friends veya user.name diye cagırabiliriz
+*/
 
 const allUsers = [
   {
